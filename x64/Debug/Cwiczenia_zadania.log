@@ -1,0 +1,53 @@
+﻿  approx.cpp
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(316,1): error C2059: błąd składniowy: „)”
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(315,79): error C2065: "methods": niezadeklarowany identyfikator
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(315,86): error C2059: błąd składniowy: „)”
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(316,5): error C2059: błąd składniowy: „)”
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(317,5): error C2143: błąd składniowy: brakuje „;” przed „{”
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(318,14): error C2947: oczekiwano ">" by zakończyć Lista argumentów szablonu, znaleziono "<<"
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(318,14): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(315,11): error C2144: błąd składniowy: „unknown-type” powinno być poprzedzone „)”
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(315,11): error C2144: błąd składniowy: „unknown-type” powinno być poprzedzone „;”
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(318,31): warning C4518: "unknown-type ": specyfikator(y) klasy magazynu lub typu są nieoczekiwane w tym miejscu i zostały zignorowane
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(318,31): warning C4502: „specyfikacja wiązania” wymaga użycia słowa kluczowego „extern” i musi poprzedzać wszystkie inne specyfikatory
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(318,31): error C2537: „
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(318,31): error C2537: Funkcja: ”: niedozwolona specyfikacja wiązania
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(318,31): error C2988: nierozpoznana deklaracja/definicja szablonu
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(318,31): error C2059: błąd składniowy: „<<”
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(320,24): error C2065: "methods": niezadeklarowany identyfikator
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(320,9): error C2988: nierozpoznana deklaracja/definicja szablonu
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(320,9): error C2059: błąd składniowy: „for”
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(320,31): error C2059: błąd składniowy: „)”
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(320,33): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(321,13): error C2062: nieoczekiwany typ "int"
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(323,30): error C2065: "T": niezadeklarowany identyfikator
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(323,20): error C2923: „_interval”: „T” nie jest prawidłowym argumentem typu szablon dla parametru „T”
+  C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(323,30):
+  zobacz deklarację „T”
+  
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(323,20): error C3203: „_interval”: nie można używać klasy niespecjalizowanej klasa szablon jako argumentu szablon dla parametru szablon „_Ty”, oczekiwano typu rzeczywistego
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(323,57): error C2065: "T": niezadeklarowany identyfikator
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(323,60): error C2065: "init": niezadeklarowany identyfikator
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(323,66): error C2065: "m": niezadeklarowany identyfikator
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(323,76): error C2065: "f": niezadeklarowany identyfikator
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(323,79): error C2065: "tol": niezadeklarowany identyfikator
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(323,84): error C2065: "maxIter": niezadeklarowany identyfikator
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(323,93): error C2065: "iterCount": niezadeklarowany identyfikator
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(325,73): error C2872: "end": niejednoznaczny symbol
+  C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(324,18):
+  może to być "auto end"
+  C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(325,73):
+  lub       „end”
+  
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(325,37): error C2672: „std::chrono::duration_cast”: nie znaleziono zgodnej przeciążonej funkcji
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\__msvc_chrono.hpp(77,19):
+  może to być „_To std::chrono::duration_cast(const std::chrono::duration<_Rep,_Period> &) noexcept(<expr>)”
+  	C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(325,37):
+  	„_To std::chrono::duration_cast(const std::chrono::duration<_Rep,_Period> &) noexcept(<expr>)”: nie można wywnioskować argumentu szablon dla elementu „const std::chrono::duration<_Rep,_Period> &” z „auto”
+  
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(326,18): error C2988: nierozpoznana deklaracja/definicja szablonu
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(326,18): error C2143: błąd składniowy: brakuje „;” przed „<<”
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(326,18): error C2059: błąd składniowy: „<<”
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(327,13): error C2447: "{": brak nagłówka funkcji (stary styl formalnej listy?)
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(411,9): error C3861: "Newton": identyfikatora nie odnaleziono
+C:\Users\Mamczyk\Desktop\Modelowanie niepewności\Cwiczenia 1\approx.cpp(411,9): error C2065: "Newton": niezadeklarowany identyfikator

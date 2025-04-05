@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -G "Unix Makefiles" -S /home/jcabala/mamczur -B /home/jcabala/mamczur/cmake-build-debug-wsl
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/jcabala/mamczur/cmake-build-debug-wsl

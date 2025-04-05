@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g CMakeFiles/MyProject.dir/main.cpp.o CMakeFiles/MyProject.dir/test/interval_test.cpp.o CMakeFiles/MyProject.dir/test/approx_test.cpp.o CMakeFiles/MyProject.dir/test/newton_test.cpp.o -o MyProject 
