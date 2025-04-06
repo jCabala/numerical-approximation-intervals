@@ -78,18 +78,25 @@ _interval<T> operator/(const _interval<T>& x, const _interval<T>& y) {
 template <class T>
 _interval<T> power(const _interval<T>& x, int n) {
     if (n < 0) {
-        throw invalid_argument("Negative exponent not supported");
+        throw std::invalid_argument("Negative exponent not supported");
     }
     if (n == 0) {
         return _interval<T>(1, 1);
     }
+
     T a_pow = std::pow(x.inf(), n);
     T b_pow = std::pow(x.sup(), n);
+
     if (n % 2 == 1) {
         return _interval<T>(a_pow, b_pow);
     }
+
+    if (x.inf() <= 0 && x.sup() >= 0) {
+        return _interval<T>(0, std::max(a_pow, b_pow));
+    }
     return _interval<T>(std::min(a_pow, b_pow), std::max(a_pow, b_pow));
 }
+
 template <class T>
 _interval<T> sqrt_interval(const _interval<T>& x) {
     T a = x.inf();

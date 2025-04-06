@@ -104,7 +104,7 @@ void run_newton_test(const string& label, const _interval<double>& range,
     cout << "Function: " << label << ", Interval: " << range << "\n";
     auto run_method = [&](const string& methodName, auto newton_method) {
         auto start = high_resolution_clock::now();
-        vector<_interval<double>> roots = newton_method(range, f, df, 1e-2, 100000, 1e-6);
+        vector<_interval<double>> roots = newton_method(range, f, df, 1e-2, 1000, 1e-6);
         auto end = high_resolution_clock::now();
         auto duration = duration_cast<microseconds>(end - start).count();
 
@@ -138,10 +138,9 @@ void run_newton_test(const string& label, const _interval<double>& range,
 }
 
 int newton_test() {
-    cout << "Interval Newton Method Test\n";
-    cout << "---------------------------\n\n";
+    cout << "Testing on 1000 iterations: " << endl;
 
-    // For poly3 with roots 1,2,3 use narrow intervals around each root.
+    // For poly3 with roots 1,2,3.
     run_newton_test("Poly3 root at 1", _interval<double>(0, 10), poly3, dpoly3);
 
     // For poly4 with roots 1,2,3,4.

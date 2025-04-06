@@ -1,8 +1,9 @@
 #pragma once
+#include "interval.h"
 #include <iostream>
 #include <algorithm>
-#include "interval.h"
 #include <functional>
+#include <random>
 
 // Zadanie 2
 // Reason for having it in the header file:
@@ -22,22 +23,43 @@ _interval<T> mean_value(const _interval<T>& x, _interval<T>(*func)(_interval<T>)
 
 template <class T>
 _interval<T> slope(const _interval<T>& x, _interval<T>(*func)(_interval<T>)) {
-    T r = x.center();
-    _interval<T> denom = x - _interval<T>(r);
+    T r;
+    _interval<T> denom;
+    bool valid = false;
+    int count = 0;
 
-    // If denom contains 0 it will fail. Happens often so let's try taking something closer to the edge.
-    if (denom.inf() <= 0 && denom.sup() >= 0) {
-        r = 0.99 * x.inf();
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_real_distribution<T> dis(x.inf(), x.sup());
+
+    // Doing center every time was failing a lot
+    // Let's try random samples.
+    while (count < 100) {
+        r = dis(gen);
         denom = x - _interval<T>(r);
-        if (denom.inf() <= 0 && denom.sup() >= 0) {
-            r = 0.99 * x.sup();
-            denom = x - _interval<T>(r);
+        if (!(denom.inf() <= 0 && denom.sup() >= 0)) {
+            valid = true;
+            break;
         }
+        count++;
     }
+
+    // Fallback if no random sample produced a valid r.
+    // Try edge values
+    if (!valid) {
+            r = 0.999 * x.inf();
+            denom = x - _interval<T>(r);
+            if (denom.inf() <= 0 && denom.sup() >= 0) {
+                r = 0.999 * x.sup();
+                denom = x - _interval<T>(r);
+            }
+    }
+
     _interval<T> num = func(x) - func(_interval<T>(r));
     _interval<T> slope_val = num / denom;
     return func(_interval<T>(r)) + slope_val * (x - _interval<T>(r));
 }
+
 template <class T>
 _interval<T> bi_center(const _interval<T>& x, _interval<T>(*func)(_interval<T>), _interval<T>(*deriv)(_interval<T>)) {
     _interval<T> derivative = deriv(x);

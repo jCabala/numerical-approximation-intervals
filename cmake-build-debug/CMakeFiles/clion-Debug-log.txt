@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S \\wsl.localhost\Ubuntu\home\jcabala\mamczur -B \\wsl.localhost\Ubuntu\home\jcabala\mamczur\cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S \\wsl.localhost\Ubuntu\home\jcabala\mamczur -B \\wsl.localhost\Ubuntu\home\jcabala\mamczur\cmake-build-debug
 -- The C compiler identification is unknown
 -- The CXX compiler identification is unknown
 -- Detecting C compiler ABI info
@@ -14,15 +14,18 @@ CMake Error at C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share
 
   It fails with the following output:
 
-    Change Dir: '//wsl.localhost/Ubuntu/home/jcabala/mamczur/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h03s6u'
+    Change Dir: '//wsl.localhost/Ubuntu/home/jcabala/mamczur/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sokfic'
     
-    Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.2/bin/ninja/win/x64/ninja.exe" -v cmTC_216ef
-    [1/2] C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe    -o CMakeFiles\cmTC_216ef.dir\testCCompiler.c.obj -c \\wsl.localhost\Ubuntu\home\jcabala\mamczur\cmake-build-debug\CMakeFiles\CMakeScratch\TryCompile-h03s6u\testCCompiler.c
-    FAILED: CMakeFiles/cmTC_216ef.dir/testCCompiler.c.obj 
-    C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe    -o CMakeFiles\cmTC_216ef.dir\testCCompiler.c.obj -c \\wsl.localhost\Ubuntu\home\jcabala\mamczur\cmake-build-debug\CMakeFiles\CMakeScratch\TryCompile-h03s6u\testCCompiler.c
+    Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_8fbdc/fast
+    C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\cmTC_8fbdc.dir\build.make CMakeFiles/cmTC_8fbdc.dir/build
+    mingw32-make[1]: Entering directory '//wsl.localhost/Ubuntu/home/jcabala/mamczur/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sokfic'
+    Building C object CMakeFiles/cmTC_8fbdc.dir/testCCompiler.c.obj
+    C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe    -o CMakeFiles\cmTC_8fbdc.dir\testCCompiler.c.obj -c "\\wsl.localhost\Ubuntu\home\jcabala\mamczur\cmake-build-debug\CMakeFiles\CMakeScratch\TryCompile-sokfic\testCCompiler.c"
     Assembler messages:
-    Fatal error: can't create CMakeFiles\cmTC_216ef.dir\testCCompiler.c.obj: Invalid argument
-    ninja: build stopped: subcommand failed.
+    Fatal error: can't create CMakeFiles\cmTC_8fbdc.dir\testCCompiler.c.obj: Invalid argument
+    mingw32-make[1]: *** [CMakeFiles\cmTC_8fbdc.dir\build.make:77: CMakeFiles/cmTC_8fbdc.dir/testCCompiler.c.obj] Error 1
+    mingw32-make[1]: Leaving directory '//wsl.localhost/Ubuntu/home/jcabala/mamczur/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sokfic'
+    mingw32-make: *** [Makefile:126: cmTC_8fbdc/fast] Error 2
     
     
 
